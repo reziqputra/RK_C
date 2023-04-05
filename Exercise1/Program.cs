@@ -59,7 +59,28 @@ namespace Exercise1
                                                 break;
                                             case '2':
                                                 {
-
+                                                    Console.Clear();
+                                                    Console.WriteLine("INPUT DATA NASABAH\n");
+                                                    Console.WriteLine("Masukkan ID :");
+                                                    string id_Nasabah = Console.ReadLine();
+                                                    Console.WriteLine("Masukkan Nama :");
+                                                    string nama = Console.ReadLine();
+                                                    Console.WriteLine("Masukkan No Telpon :");
+                                                    string no_telp = Console.ReadLine();
+                                                    Console.WriteLine("Masukkan Nomor Rekening :");
+                                                    string no_rek = Console.ReadLine();
+                                                    Console.WriteLine("Masukkan Nama Bank (BNI/BCA) :");
+                                                    string bank = Console.ReadLine();
+                                                    Console.WriteLine("Masukkan Alamat Nasabah :");
+                                                    string alamat = Console.ReadLine();
+                                                    try
+                                                    {
+                                                        pr.insert(id_Nasabah, nama, no_telp, no_rek, bank, alamat, conn);
+                                                    }
+                                                    catch
+                                                    {
+                                                        Console.WriteLine("\nAnda tidak memiliki " + "akses untuk menambah data");
+                                                    }
                                                 }
 
                                         }
