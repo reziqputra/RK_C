@@ -52,11 +52,15 @@ namespace Exercise1
                                             case '1':
                                                 {
                                                     Console.Clear();
-                                                    Console.WriteLine("DATA MAHASISWA\n");
+                                                    Console.WriteLine("DATA BANK SAMPAH\n");
                                                     Console.WriteLine();
                                                     pr.baca(conn);
                                                 }
                                                 break;
+                                            case '2':
+                                                {
+
+                                                }
 
                                         }
                                     }
